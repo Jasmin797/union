@@ -10,9 +10,8 @@ import { getChainFromWagmi } from "$lib/wallet/evm"
 import { getCosmosPublicClient } from "$lib/services/cosmos/clients.ts"
 import { tokenWrappingQuery } from "$lib/queries/tokens.svelte.ts"
 import { GetQuoteError } from "$lib/services/transfer-ucs03-evm/errors.ts"
-import { Aptos, AptosConfig, Network, MoveVector } from "@aptos-labs/ts-sdk"
+import { MoveVector } from "@aptos-labs/ts-sdk"
 import { getPublicClient as getAptosClient } from "$lib/services/aptos/clients"
-
 
 export const getQuoteToken = (
   sourceChain: Chain,
