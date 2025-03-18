@@ -117,7 +117,7 @@ let buttonText = $derived(
           class="mt-2"
           variant="primary"
           onclick={transfer.submit}
-          disabled={!isButtonEnabled}
+          disabled={!isButtonEnabled || !transfer.validation.isValid}
   >
     {buttonText}
   </Button>
